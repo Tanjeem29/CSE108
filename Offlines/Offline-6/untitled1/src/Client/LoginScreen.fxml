@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Client.LoginController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="263.0" prefWidth="335.0">
+            <children>
+                <TextField fx:id="UID" layoutX="139.0" layoutY="35.0" promptText="User ID" />
+                <TextField fx:id="Pass" layoutX="141.0" layoutY="87.0" promptText="&quot;view&quot; if viewer" />
+                <Label layoutX="60.0" layoutY="39.0" text="User ID" />
+                <Label layoutX="43.0" layoutY="91.0" text="Password" />
+                <Button fx:id="LoginB" layoutX="82.0" layoutY="159.0" mnemonicParsing="false" onAction="#loginAction" text="Login" />
+                <Button fx:id="ResetB" layoutX="215.0" layoutY="163.0" mnemonicParsing="false" onAction="#resetAction" text="Reset" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

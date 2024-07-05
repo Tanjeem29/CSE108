@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <children>
+      <Label fx:id="message" layoutX="96.0" layoutY="43.0" prefHeight="39.0" prefWidth="215.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="button" layoutX="273.0" layoutY="313.0" mnemonicParsing="false" onAction="#logoutAction" text="Logout" />
+      <Button fx:id="viewButton" alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="65.0" mnemonicParsing="false" onAction="#viewAction" prefHeight="40.0" prefWidth="200.0" text="View All Cars">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button fx:id="searchRegButton" layoutX="200.0" layoutY="123.0" mnemonicParsing="false" onAction="#searchRegAction" prefHeight="40.0" prefWidth="200.0" text="Search by Reg ID">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button fx:id="searchMakeButton" layoutX="200.0" layoutY="181.0" mnemonicParsing="false" onAction="#searchMakeAction" prefHeight="40.0" prefWidth="200.0" text="Search By Make and Model">
+         <font>
+            <Font size="14.5" />
+         </font></Button>
+      <Button layoutX="200.0" layoutY="240.0" mnemonicParsing="false" onAction="#buyCarAction" prefHeight="40.0" prefWidth="200.0" text="Buy Car">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

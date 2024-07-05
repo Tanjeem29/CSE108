@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+    <Button fx:id="resetButton" layoutX="146.0" layoutY="174.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="30.0" prefWidth="70.0" text="Reset">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label layoutX="87.0" layoutY="58.0" text="Username:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="90.0" layoutY="112.0" text="Password:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="userText" layoutX="181.0" layoutY="59.0" prefHeight="25.0" prefWidth="165.0" promptText="&quot;viewer&quot; if not manufacturer" />
+      <PasswordField fx:id="passwordText" layoutX="181.0" layoutY="113.0" prefHeight="25.0" prefWidth="165.0" promptText="Empty if viewer" />
+      <Button fx:id="loginButton" layoutX="248.0" layoutY="174.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="30.0" prefWidth="70.0" text="Login">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="318.0" layoutY="248.0" mnemonicParsing="false" onAction="#closeProgram" text="Close Program" />
+   </children>
+</AnchorPane>

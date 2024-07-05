@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddPageController">
+   <children>
+      <TextField fx:id="yrMade" layoutX="151.0" layoutY="103.0" promptText="Must be an Integer" />
+      <TextField fx:id="c1" layoutX="151.0" layoutY="139.0" />
+      <TextArea fx:id="confirmation" editable="false" layoutX="353.0" layoutY="158.0" prefHeight="82.0" prefWidth="200.0" promptText="System Confirmation (Not Editable)" wrapText="true" />
+      <TextField fx:id="c2" layoutX="151.0" layoutY="175.0" promptText="Can be left Empty" />
+      <TextField fx:id="c3" layoutX="151.0" layoutY="211.0" promptText="Can be left Empty" />
+      <TextField fx:id="make" layoutX="151.0" layoutY="248.0" />
+      <TextField fx:id="regID" layoutX="151.0" layoutY="68.0" promptText="Must be Unique" />
+      <TextField fx:id="price" layoutX="151.0" layoutY="322.0" promptText="Must be an Integer" />
+      <TextField fx:id="model" layoutX="151.0" layoutY="285.0" />
+      <Button layoutX="353.0" layoutY="91.0" mnemonicParsing="false" onAction="#addAction" prefHeight="45.0" prefWidth="90.0" text="Add Car">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="353.0" layoutY="316.0" mnemonicParsing="false" onAction="#resetAction" text="Reset">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="504.0" layoutY="316.0" mnemonicParsing="false" onAction="#backToHome2" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="47.0" layoutY="71.0" text="Registration ID:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="106.0" prefHeight="20.0" prefWidth="76.0" text="Year Made:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="69.0" layoutY="142.0" text="Color 1:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="69.0" layoutY="178.0" text="Color 2:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="69.0" layoutY="214.0" text="Color 3:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="74.0" layoutY="251.0" text="Make:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="72.0" layoutY="288.0" text="Model:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="77.0" layoutY="325.0" text="Price:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
